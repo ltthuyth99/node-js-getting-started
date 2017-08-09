@@ -13,6 +13,13 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.post('/insurancebot', function(req, res) {
+    //var speech = req.body.result && req.body.result.parameters && req.body.result.parameters.echoText ? req.body.result.parameters.echoText : "Seems like some problem. Speak again."
+    return res.json({
+        msg:'hello'
+    });
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
